@@ -1,0 +1,22 @@
+.panel-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel-body img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.panel-body .address {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.panel-body .address i {
+  padding-right: 10px;
+}

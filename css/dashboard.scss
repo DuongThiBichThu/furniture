@@ -1,0 +1,22 @@
+.panel-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    
+    .address{
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        i{
+            padding-right: 10px;
+        }
+        
+    }
+}

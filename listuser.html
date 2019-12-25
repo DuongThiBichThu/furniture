@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div class="header">
+  <ul>
+    <li><a href="listuser.html">User board</a></li>
+    <li><a href="listproduct.html">Product board</a></li>
+    <li><a href="listslide.html">Slide board</a></li>
+    <li><a href="login.html">Logout</a></li>
+  </ul>
+</div>
+<div class="container">
+  <h2>USER BOARD</h2>
+  <form class="form-inline">
+    <div class="form-group">
+
+      <input type="id" id="iduser" class="form-control mx-sm-3" placeholder="Enter id"><br>
+      <br>
+      <input type="text" id="firstnameser" class="form-control mx-sm-3" placeholder="Enter firstname"><br>
+      <br>
+      <input type="text" id="lastnameser" class="form-control mx-sm-3" placeholder="Enter lastname">
+      <br>
+      <br>
+      <input type="text" id="address" class="form-control mx-sm-3" placeholder="Enter address"><br>
+      <br>
+
+      <input type="text" id="phone" class="form-control mx-sm-3" placeholder="Enter phone"><br>
+      <br>
+    </div>
+    <br><br>
+  </form>
+
+  <div class="directbtn">
+    <button type="button" id="btnadd" onclick="AddUser" class="btn btn-primary">Add</button>
+    <button type="button" id="btnup" onclick="UpdateUser" class="btn btn-primary">Update</button>
+    <button type="button" id="btndel" onclick="DeleteUser" class="btn btn-primary">Delete</button>
+  </div>
+  <table class="table table-striped" id="list_table_json">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Phone</th>
+        <th>Address</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+     
+    </tbody>
+  </table>
+</div>
+<script src="js/crudUser.js"></script>
+</body>
+</html>
